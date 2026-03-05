@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Trang Game</title>
+
+<style>
+body{
+    text-align:center;
+    font-family:Arial;
+}
+
+button{
+    padding:10px 25px;
+    margin:10px;
+    font-size:18px;
+}
+
+.game{
+    display:none;
+    margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>TRANG CHỦ</h1>
+
+<button onclick="showGame(1)">Game 1</button>
+<button onclick="showGame(2)">Game 2</button>
+<button onclick="showGame(3)">Game 3</button>
+
+<div id="game1" class="game">
+<h2>Game 1</h2>
+<p>Đây là Game 1</p>
+</div>
+
+<div id="game2" class="game">
+<h2>Game 2</h2>
+<p>Đây là Game 2</p>
+</div>
+
+<div id="game3" class="game">
+<h2>Game 3</h2>
+<p>Đây là Game 3</p>
+</div>
+
+<script>
+
+function showGame(n){
+    document.getElementById("game1").style.display="none";
+    document.getElementById("game2").style.display="none";
+    document.getElementById("game3").style.display="none";
+
+    document.getElementById("game"+n).style.display="block";
+}
+
+</script>
+
+</body>
+</html>
